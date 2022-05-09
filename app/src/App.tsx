@@ -15,7 +15,7 @@ import { store } from './store/index.js'
 export const App = (): ReactElement => (
     <StrictMode>
         <Provider store={store}>
-            <BrowserRouter>
+            <BrowserRouter basename="app">
                 {/* the header */}
                 <Header />
 

@@ -10,8 +10,9 @@ import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { VitePWA } from 'vite-plugin-pwa'
 
-export default defineConfig(() => {
+export default defineConfig(({ mode }) => {
     return {
+        base: mode == 'development' ? '/app/' : 'https://alpa.link/app/',
         clearScreen: false,
         root: 'src',
         build: {

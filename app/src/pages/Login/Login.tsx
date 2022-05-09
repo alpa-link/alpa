@@ -71,7 +71,7 @@ export const Login = (): ReactElement => {
                         Welcome to{' '}
                         <a
                             className="text-primary"
-                            href="https://github.com/vsnthdev/alpa"
+                            href="https://alpa.link"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

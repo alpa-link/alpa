@@ -33,6 +33,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap">
 
+    <!-- safety redirect for alpa.link to only use https://alpa.link website -->
+    <script>
+        const allowed = ['https://alpa.link', 'http://localhost']
+        if (allowed.map(entry => window.location.href.startsWith(entry)).includes(true) == false) window.location.href = 'https://alpa.link'
+    </script>
+
     <!-- TypeScript bundle -->
     <script src="./index.tsx" type="module"></script>
 </head>
