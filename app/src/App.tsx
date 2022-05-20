@@ -26,7 +26,7 @@ export const App = (): ReactElement => {
     return (
         <StrictMode>
             <Provider store={store}>
-                <BrowserRouter>
+                <BrowserRouter basename="app">
                     <HotKeys
                         className="h-full"
                         keyMap={hotkeyMap}
